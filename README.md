@@ -20,14 +20,16 @@ El Desarrollo Guiado por el Comportamiento o BDD (behavior-driven development) e
 
 Dado una lista vacia:
 
-1. La lista debe almacenar pares clave:valor.
-2. Las claves almacenadas en la lista deben ser únicas.
-3. Las claves son cadenas de texto.
-4. Se debe poder recuperar un valor a partir de una clave.
-5. Se debe poder actualizar el valor asociado a una clave.
-6. Se debe poder borrar una pareja a partir de la clave.
-7. Se debe poder recuperar la cantidad de elementos almacenados en la lista.
-8. Se debe poder recuperar una lista ordenada de las claves almacenadas en la lista.
+```
+1.  La lista debe almacenar pares clave:valor.
+2.  Las claves almacenadas en la lista deben ser únicas.
+3.  Las claves son cadenas de texto.
+4.  Se debe poder recuperar un valor a partir de una clave.
+5.  Se debe poder actualizar el valor asociado a una clave.
+6.  Se debe poder borrar una pareja a partir de la clave.
+7.  Se debe poder recuperar la cantidad de elementos almacenados en la lista.
+8.  Se debe poder recuperar una lista ordenada de las claves almacenadas en la lista.
+```
 
 ## Este proyecto esta formado por:
 * Node Js.
