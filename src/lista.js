@@ -45,54 +45,15 @@ module.exports = class Lista {
 
     }
 
-    /************************* */
-
-    update(clave, valor) {
-
-
-        var lst = this.elementos;
-        for (var i = 0; i < lst.length; i++) {
-            if (lst[i].clave == clave) {
-                this.elementos[i].valor = valor;
-                return;
-            }
-        }
-
-    }
-
-    getSort() {
-
-        this.elementos.sort(this.compare("clave")); //ordena la lista
-        console.log(this.elementos); //muestra la lista ordenada
-
-        return true;
-    }
-
-    compare(prop) {
-        return function(a, b) {
-            if (a[prop] < b[prop]) {
-
-                return -1;
-            }
-            if (a[prop] > b[prop]) {
-
-
-                return 1;
-            }
-            return 0;
-        };
-    }
-
     eliminar(clave) {
         var lst = this.elementos;
         for (var i = 0; i < lst.length; i++) {
             if (lst[i].clave == clave) {
                 lst.splice(i, 1);
-                return;
+                return 1;
             }
         }
     }
-
 
     detectarClave(clave) {
 
@@ -104,6 +65,14 @@ module.exports = class Lista {
         return NaN;
     }
 
+    mostrarValores() {
 
+        var listado_claves = [];
+        var claves_actuales = this.elementos;
+        for (var i = 0; i < claves_actuales.length; i++) {
+            listado_claves[i] = claves_actuales[i].clave;
+        }
+        return listado_claves.sort(); //ordenamos
+    }
 
 }
